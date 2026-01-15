@@ -6,12 +6,14 @@ from PIL import Image
 from io import BytesIO
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+import os
 
 # Ruta de Tesseract
 #pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 # Token
-TOKEN = "8590416573:AAFj-dxo50n63jwu5kPVHnZO0Mvr4P6_Ep0"
+#TOKEN = "TOQUEN LOCAL"
+TOKEN=os.getenv("BOT_TOKEN")
 
 # Google Sheet
 SHEET_URL = "https://docs.google.com/spreadsheets/d/1MKT4wK52AznGAhhD04i5xABK3QZs3_otstdChUmC_t4/export?format=csv"
