@@ -10,6 +10,8 @@ import os
 
 # Ruta de Tesseract
 #pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+# Render / Linux
+pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
 
 # Token
 #TOKEN = "TOQUEN LOCAL"
